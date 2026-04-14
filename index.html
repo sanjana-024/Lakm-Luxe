@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakmé Luxe Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- nav -->
+  <nav id="navbar">
+    <div class="nav-logo">Lakmé Luxe</div>
+    <ul class="nav-links">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#consult">Consult</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#collections" onclick="closeMobileMenu()">Collections</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#consult" onclick="closeMobileMenu()">Consult</a></li>
+    </ul>
+  </div>
+
+  <!-- my -->
+  <section class="my" id="home">
+    <img src="img/7.webp" alt="Lakmé Luxe my">
+    <div class="my-overlay"></div>
+    <div class="my-content">
+      <p class="my-eyebrow">New Season · 2026 Collection</p>
+      <h1>Beauty <em>Refined</em><br>to Perfection</h1>
+      <p>Premium beauty crafted for the modern woman — where elegance meets bold self-expression in every detail.</p>
+      <a href="#collections" class="my-cta">
+        <span class="my-cta-text">Shop Now</span>
+        <span class="my-cta-line"></span>
+        <span class="my-cta-arrow">→</span>
+      </a>
+    </div>
+    <div class="my-scroll">Scroll</div>
+  </section>
+
+  <!-- About / Intro -->
+  <section class="intro" id="about">
+    <div class="intro-left reveal">
+      <p class="intro-label">Our Philosophy</p>
+      <h2>Where <span>Tradition</span><br>Meets Modernity</h2>
+      <p>Lakmé has been India's most beloved beauty house for over seven decades. Every formula we create balances the
+        timeless rituals of Indian beauty with the precision of modern cosmetic science — for skin that truly glows.</p>
+    </div>
+    <div class="intro-right reveal reveal-delay-2">
+      <div class="intro-stat">
+        <div class="intro-stat-num">70+</div>
+        <div class="intro-stat-label">Years of Craft</div>
+      </div>
+      <div class="intro-stat">
+        <div class="intro-stat-num">500+</div>
+        <div class="intro-stat-label">Shades</div>
+      </div>
+      <div class="intro-stat">
+        <div class="intro-stat-num">12M</div>
+        <div class="intro-stat-label">Customers</div>
+      </div>
+      <div class="intro-stat">
+        <div class="intro-stat-num">100%</div>
+        <div class="intro-stat-label">Derma-Tested</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection / Products -->
+  <section class="products-section" id="collections">
+    <div class="section-header reveal">
+      <div class="section-header-left">
+        <p class="eyebrow">Curated Selection</p>
+        <h2>Best Sellers</h2>
+      </div>
+      <a href="#collections" class="section-header-right">View All</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card reveal collage-large">
+        <span class="product-num">01</span>
+        <a href="img/1.webp" target="_blank">
+          <img src="img/1.webp" alt="Lakmé Absolute Matte Lipstick">
+        </a>
+        <div class="product-card-overlay">
+          <div class="product-info">
+            <div class="product-name">Absolute Matte</div>
+            <div class="product-sub">Lip Color · 35 Shades</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-1 collage-tall">
+        <span class="product-num">02</span>
+        <a href="img/2.webp" target="_blank">
+          <img src="img/2.webp" alt="Product 2">
+        </a>
+        <div class="product-card-overlay">
+          <div class="product-info">
+            <div class="product-name">Skin Dew</div>
+            <div class="product-sub">Foundation · SPF 20</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-2 collage-small">
+        <span class="product-num">03</span>
+        <a href="img/3.webp" target="_blank">
+          <img src="img/3.webp" alt="Product 3">
+        </a>
+        <div class="product-card-overlay">
+          <div class="product-info">
+            <div class="product-name">Eye Drama</div>
+            <div class="product-sub">Mascara · Volumising</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-1 collage-small">
+        <span class="product-num">04</span>
+        <a href="img/4.webp" target="_blank">
+          <img src="img/4.webp" alt="Product 4">
+        </a>
+        <div class="product-card-overlay">
+          <div class="product-info">
+            <div class="product-name">Rose Blush</div>
+            <div class="product-sub">Cheek Colour · 12 Tones</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-2 collage-wide">
+        <span class="product-num">05</span>
+        <a href="img/5.webp" target="_blank">
+          <img src="img/5.webp" alt="Product 5">
+        </a>
+        <div class="product-card-overlay">
+          <div class="product-info">
+            <div class="product-name">Kohl Ultimate</div>
+            <div class="product-sub">Eye Liner · Smudge-Proof</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>✦</span> Luxuriously Crafted</div>
+      <div class="marquee-item"><span>✦</span> Dermatologist Tested</div>
+      <div class="marquee-item"><span>✦</span> Cruelty Free Formulas</div>
+      <div class="marquee-item"><span>✦</span> 70 Years of Heritage</div>
+      <div class="marquee-item"><span>✦</span> Premium Ingredients</div>
+      <div class="marquee-item"><span>✦</span> 500+ Shades</div>
+      <div class="marquee-item"><span>✦</span> Made for Every Skin</div>
+      <div class="marquee-item"><span>✦</span> Luxuriously Crafted</div>
+      <div class="marquee-item"><span>✦</span> Dermatologist Tested</div>
+      <div class="marquee-item"><span>✦</span> Cruelty Free Formulas</div>
+      <div class="marquee-item"><span>✦</span> 70 Years of Heritage</div>
+      <div class="marquee-item"><span>✦</span> Premium Ingredients</div>
+      <div class="marquee-item"><span>✦</span> 500+ Shades</div>
+      <div class="marquee-item"><span>✦</span> Made for Every Skin</div>
+    </div>
+  </div>
+
+  <!-- Consultation Foam -->
+  <section class="consultation" id="consult">
+    <div class="consultation-left reveal">
+      <p class="eyebrow">Personalised Service</p>
+      <h2>Your Beauty,<br><em>Your Rules</em></h2>
+      <p>Our expert beauty consultants are here to guide you toward the perfect regimen — tailored to your unique skin
+        type, tone, and lifestyle.</p>
+      <div class="consultation-features">
+        <div class="c-feature">
+          <div class="c-feature-dot"></div>
+          <div class="c-feature-text">Personalised product recommendations</div>
+        </div>
+        <div class="c-feature">
+          <div class="c-feature-dot"></div>
+          <div class="c-feature-text">Skin-type matched formulas</div>
+        </div>
+        <div class="c-feature">
+          <div class="c-feature-dot"></div>
+          <div class="c-feature-text">Complimentary follow-up consultation</div>
+        </div>
+        <div class="c-feature">
+          <div class="c-feature-dot"></div>
+          <div class="c-feature-text">Exclusive member offers and previews</div>
+        </div>
+      </div>
+    </div>
+    <div class="consultation-form reveal reveal-delay-2" id="consultForm">
+      <div class="form-field">
+        <label>Full Name</label>
+        <input type="text" placeholder="Ananya Sharma" id="fname">
+      </div>
+      <div class="form-divider"></div>
+      <div class="form-field">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@example.com" id="femail">
+      </div>
+      <div class="form-divider"></div>
+      <div class="form-field">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+91 9*********" id="fphone">
+      </div>
+      <div class="form-divider"></div>
+      <div class="form-field">
+        <label>Skin Type</label>
+        <select id="fskin">
+          <option value="">Select your skin type</option>
+          <option>Dry — Needs extra nourishment</option>
+          <option>Oily — Shine control focus</option>
+          <option>Combination — Balanced approach</option>
+          <option>Normal — Maintenance & glow</option>
+          <option>Sensitive — Gentle formulas</option>
+        </select>
+      </div>
+      <button class="form-submit" onclick="handleSubmit()"><span>Request Consultation</span></button>
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✦</div>
+        <p>Consultation Requested</p>
+        <small>Our beauty expert will reach out within 24 hours.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom -->
+  <section class="bottom-banner">
+    <img src="img/6.webp" alt="Lakmé Luxe Campaign">
+    <div class="bottom-banner-content">
+      <h2>Discover Your<br><em>Signature Look</em></h2>
+      <p>New arrivals now in store · Season 2026</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Lakmé Luxe</div>
+    <div class="footer-copy">© 2026 Lakmé Luxe. All rights reserved.</div>
+    <ul class="footer-links">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#consult">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    /* ── Custom Cursor ── */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+    });
+
+    (function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button, input, select, .product-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width  = '56px';
+        ring.style.height = '56px';
+        ring.style.borderColor = 'rgba(201,168,76,0.8)';
+        cursor.style.transform = 'translate(-50%,-50%) scale(2)';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width  = '36px';
+        ring.style.height = '36px';
+        ring.style.borderColor = 'rgba(201,168,76,0.5)';
+        cursor.style.transform = 'translate(-50%,-50%) scale(1)';
+      });
+    });
+
+    /* ── Navbar scroll tint ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Mobile hamburger ── */
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+
+    /* ── Smooth scroll for all anchor links ── */
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        const offset = 80; // nav height
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    /* ── Scroll Reveal ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Parallax Banner ── */
+    window.addEventListener('scroll', () => {
+      const banner = document.querySelector('.bottom-banner img');
+      if (!banner) return;
+      const rect   = banner.parentElement.getBoundingClientRect();
+      const offset = -rect.top * 0.2;
+      banner.style.transform = `translateY(${offset}px)`;
+    });
+
+    /* ── Form Submit ── */
+    function handleSubmit() {
+      const name  = document.getElementById('fname').value;
+      const email = document.getElementById('femail').value;
+      const phone = document.getElementById('fphone').value;
+      const skin  = document.getElementById('fskin').value;
+      if (!name || !email || !phone || !skin) {
+        ring.style.borderColor = 'rgba(220,60,60,0.8)';
+        setTimeout(() => ring.style.borderColor = 'rgba(201,168,76,0.5)', 600);
+        return;
+      }
+      document.querySelectorAll('.form-field, .form-submit').forEach(el => el.style.display = 'none');
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
